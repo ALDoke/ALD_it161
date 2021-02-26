@@ -1,0 +1,108 @@
+/* BIG Website */
+
+html {
+    background-color:#ccc;
+}
+
+main {
+    background-color:#fff;
+    width:80%;
+    margin:auto;
+    border:1px solid black;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+div.gallery {
+    text-align:center;
+}
+
+img {
+    border:1px solid #000;
+}
+
+figure {
+    display:inline-block;
+    width:30%;
+    margin:.25%;
+}
+
+/* Start Embed Responsively Styles */
+.embed-container { 
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+} 
+.embed-container iframe { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+/* End Embded Responsively Styles */
+
+/* Hide Agenda View Calender */
+div.embed-container.agenda-view {
+    display:none;
+}
+
+/* Start Left Column Styles */
+section {
+    float:left;
+    width:65%;
+}
+/* End Left Column Styles */
+
+/* Start Right Column Styles */
+aside {
+    float:right;
+    width:34%;
+}
+/* End Right Column Styles */
+
+.fullwidth {
+    width:100%;
+}
+
+footer {
+    padding:2em;
+    text-align:center;
+    clear:both;
+}
+
+/* Calenderr Rules for Phone */
+@media all and (max-width:1350px) {
+    
+    /* Show Agenda View Calender */
+    div.embed-container.agenda-view {
+        display:block;
+    }
+    /* Hide Month View Calender */
+    div.embed-container.month-view {
+        display:none;
+    }
+    
+}
+
+/* MOBILE STYLES */
+
+@media all and (max-width:600px) {
+    main {
+    background-color:#fff;
+    width:100%;
+    }
+    section {
+    float:none;
+    width:100%;
+    }
+
+aside {
+    float:none;
+    width:100%;
+    }
+}
